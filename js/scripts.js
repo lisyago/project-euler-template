@@ -81,5 +81,25 @@ function largestPrimeFactor(n) { //Sieve of Eratosthenes (решето Арат�
         }
         if(factorsI == false) {str2 += ' ' + factors[i]; break;}
     }
-    answer.html('Largest prime factor of number ' + n + ': ' + str2);
+    let answer = 'Largest prime factor of number ' + n + ': ' + str2;
+
+    const UIElements = [ "largestPrimeFactor",
+    "Problem 03",
+    "Largest prime factor",
+    "The prime factors of 13195 are 5, 7, 13 and 29.<br/>What is the largest prime factor of the number 600851475143 ?",
+    answer ];
+    buildListElement(...UIElements);
 }
+largestPrimeFactor(1000);
+/******************************** */
+
+function largestPalindromeProduct(n) {
+
+    const UIElements = [ "largestPalindromeProduct",
+    "Problem 04",
+    "Largest prime factor",
+    "A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. <br/> Find the largest palindrome made from the product of two 3-digit numbers." ];
+    buildListElement(...UIElements);
+}
+largestPalindromeProduct(2);
+/******************************** */
